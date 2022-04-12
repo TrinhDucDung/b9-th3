@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numbers = [-3, 5, 1, 3, 2, 10, 80];  //khai báo 1 mảng
+        let max = numbers[0]; // gán giá trị max vào phần tử đầu tiên của mảng
+        let index = 0;  // khai báo biến index mặc định bằng 0 để lưu phần tử lớn nhất trong mảng
+        // sử dụng vòng lặp for để kiểm tra từng phần tử. 
+        // nếu phần tử ở vị trí i có giá trị lớn hơn max thì gắn max là gia trị của phần tử tại vị trí i
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+                index = i;
+            }
+        }
+        // in ra phần tử max đã tìm được và vị trí i trong mảng
+        alert("Giá trị lớn nhất : " + max + " ở vị trí :  " + index);
+    </script>
+</body>
+
+</html>
